@@ -7,8 +7,7 @@ export default function Home()
             <h1 className="txt-header">Hello!</h1>
             <div className="center-ancacc">
                 <Link as="button" href="/account" className="anchor-acc">ACCOUNT</Link>
-            </div>
-            
+            </div>            
         </div>
     )
 }

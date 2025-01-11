@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -17,6 +18,8 @@ use Inertia\Inertia;
 Route::inertia('/', 'Home');
 Route::inertia('/account', 'Account');
 Route::inertia('/addaccount', 'AddAccount');
+Route::post('/addaccountnow', [UserController::class, 'CreateUserAccount']);    
+
 
 /*
     JSTAR:
